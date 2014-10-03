@@ -1,4 +1,4 @@
 Magento Community México
 ========================
 
-Welcome.
+Welcome to.
