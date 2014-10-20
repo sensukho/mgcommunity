@@ -1,10 +1,15 @@
 language: php
 
 php:
-  - 5.3.3
-  - 5.3
   - 5.4
 
-before_script: composer install -n
+services:
+  - memcached
+  - mongodb
+  - redis-server
 
-script: phpunit -c app
+before_script:
+  - time ./.travis_setup.sh
+
+script: php app/check.php && ./bin/qa_client_ci.sh && ./bin/qa_behat.sh
+
