@@ -1,6 +1,6 @@
 # This file is auto-generated during the composer install
 parameters:
-    database_name: mcm
+    database_name: sandbox
     database_user: root
     database_driver: pdo_mysql
     database_host: 127.0.0.1
